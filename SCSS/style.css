@@ -1,0 +1,54 @@
+section {
+	 min-height: 450px;
+	 display: flex;
+	 align-items: center;
+	 text-align: center;
+	 position: relative;
+	 text-align: center;
+}
+ section .section-content {
+	 width: 100%;
+	 position: relative;
+	 z-index: 2;
+}
+ section .section-mask {
+	 position: absolute;
+	 top: -50px;
+	 bottom: -50px;
+	 right: 0;
+	 left: 0;
+	 z-index: 1;
+	 background: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80);
+	 background-size: cover !important;
+	 transform: skewY(10deg);
+}
+ .has-parallax {
+	 background-attachment: fixed !important;
+}
+/*Estilos para la presentación IGNORAR*/
+ body {
+	 padding: 0;
+	 margin: 0;
+	 font-family: proxima nova, arial, sans-serif;
+}
+ h1 {
+	 width: 100%;
+	 font-size: 36px;
+}
+ p {
+	 font-size: 18px;
+	 width: 100%;
+	 display: block;
+}
+ .has-diagonal p, .has-diagonal h1 {
+	 color: #fff;
+}
+ .has-padding {
+	 padding-top: 250px !important;
+	 padding-bottom: 250px !important;
+}
+ .bg-option-2 {
+	 background: url(https://images.unsplash.com/photo-1474540412665-1cdae210ae6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1362&q=80) !important;
+	 background-attachment: fixed !important;
+}
+ 

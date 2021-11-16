@@ -1,0 +1,53 @@
+section {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    text-align: center;
+}
+section .section-content {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+section .section-mask {
+    position: absolute;
+    top: -50px;
+    bottom: -50px;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background: url(https://paco01.000webhostapp.com/imagenes/imagen.jpg);
+    background-size: cover !important;
+    transform: skewY(10deg);
+}
+.has-parallax {
+    background-attachment: fixed !important;
+}
+/*Estilos para la presentaciÃ³n IGNORAR*/
+body {
+    padding: 0;
+    margin: 0;
+    font-family: proxima nova, arial, sans-serif;
+}
+h1 {
+    width: 100%;
+    font-size: 36px;
+}
+p {
+    font-size: 18px;
+    width: 100%;
+    display: block;
+}
+.has-diagonal p, .has-diagonal h1 {
+    color: #fff;
+}
+.has-padding {
+    padding-top: 250px !important;
+    padding-bottom: 250px !important;
+}
+.bg-option-2 {
+    background: "intro-img1.jpg";
+    background-attachment: fixed !important;
+}

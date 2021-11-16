@@ -1,0 +1,121 @@
+.my-modal-back {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(109, 108, 108, 0.87);
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.my-container {
+    margin: 0 5vw;
+}
+
+.my-modal {
+    width: 30vw;
+    height: 77vh;
+    position: relative;
+    top: 13vh;
+    z-index: 1000;
+    left: 35vw;
+    background-color: white;
+    padding: 20px;
+    box-sizing: content-box;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.my-modal .my-input {
+    min-width: 25vw;
+    height: 38px;
+}
+
+.my-modal label {
+    text-align: left;
+}
+
+.btn-red {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    fill: #fff;
+    background: #ec0000;
+    background: linear-gradient(to right, #ec0000 0, #f52929 100%);
+    text-decoration: none;
+    padding: .30em 0.75em;
+    border-radius: .375rem;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .25s;
+    margin: 5px;
+    width: 130px;
+    height: 40px;
+    box-sizing: content-box;
+}
+
+.btn-red:hover {
+    background: #ec0000;
+}
+
+.btn-blue {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    fill: #fff;
+    background: #2c7ae7;
+    background: linear-gradient(to right, #2c7ae7 0, #4086e9 100%);
+    text-decoration: none;
+    padding: .30em 0.75em;
+    border-radius: .375rem;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .25s;
+    margin: 5px;
+    height: 45px;
+    width: 130px;
+    box-sizing: content-box;
+}
+
+tbody tr:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+    .my-modal {
+        width: 40vw;
+        top: 20vh;
+        left: 30vw;
+    }
+    .my-modal .my-input {
+        min-width: 35vw;
+    }
+    .my-container {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .my-modal {
+        width: 80vw;
+        top: 20vh;
+        left: 5vw;
+    }
+    .my-modal .my-input {
+        min-width: 75vw;
+    }
+}

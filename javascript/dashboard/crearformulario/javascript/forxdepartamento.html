@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Globals Plus Formularios</title>
+	<meta name="description" content="Description">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Istok+Web:400,400i,700,700i%7CMontserrat:400,400i,500,500i,600,600i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="../SCSS/style.css" type="text/css">
+</head>
+<style>
+
+@font-face
+{
+   font-family: "../fonts/../Oraqle Script";
+   src: url("fuentefancy.eot");
+   src: url("fuentefancy.eot?#amocristalab") format("embedded-opentype"),
+        url("fuentefancy.woff") format("woff"),
+        url("fuentefancy.ttf") format("truetype"),
+        url("fuentefancy.svg#IDdelafuente") format("svg");
+}
+
+h1
+{
+   font-family: "Oraqle Script";
+    font-size: 418%;
+}
+h2
+{
+   font-family: "Oraqle Script";
+    font-size: 350%;
+}
+
+h3
+{
+   font-family: "Oraqle Script";
+    font-size: 300%;
+}
+</style>
+<body style="background-color:#F0F4F8;"> 
+
+	<main class="main">
+		
+		<div class="main-inner">
+
+			<!-- Begin header -->
+			<header class="header">
+				<!-- Begin header fixed -->
+				<nav class="header-fixed">
+					<div class="container">
+						<div class="row flex-nowrap align-items-center justify-content-between">
+							<div class="col-auto d-block d-lg-none header-fixed-col">
+								<div class="main-mnu-btn">
+									<span class="bar bar-1"></span>
+									<span class="bar bar-2"></span>
+									<span class="bar bar-3"></span>
+									<span class="bar bar-4"></span>
+								</div>
+							</div>
+							<div class="col-auto header-fixed-col">
+								<!-- Begin logo -->
+								<a href="/" class="logo logo-ico-widht-text" title="Globals+ Formularios">
+									<img class="lazy logo-ico" data-src="img/logo-ico.png" width="36" height="35" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
+									<span class="logo-text">Globals<span span style="color: #a1cc1b">+</span> Formularios</span>
+								</a>
+							</div>
+							<div class="col-lg col-auto col-static header-fixed-col">
+								<div class="row flex-nowrap align-items-center justify-content-end">
+									<div class="col-auto header-fixed-col d-none d-lg-block col-static">
+										<!-- Begin main menu -->
+										<nav class="main-mnu">
+											<ul class="main-mnu-list">
+												<li class="main-mnu-item-has-child">
+													<a href="index.html" data-title="Inicio">
+														<span>Inicio</span>
+														<i class="material-icons">expand_more</i>
+													</a>
+
+												</li>
+												<li>
+													<a href="about-us.html" data-title="Sobre nosotros">
+														<span>Sobre nosotros</span>
+													</a>
+												</li>
+												<li class="main-mnu-item-has-child">
+													<a href="services.html" data-title="Formularios">
+														<span>Formularios</span>
+														<i class="material-icons">expand_more</i>
+													</a>
+
+												</li>
+												<li class="main-mnu-item-has-child open main-mnu-item-mega-mnu">
+													<a href="#!" data-title="Pages">
+														<span>Servicios</span>
+														<i class="material-icons">expand_more</i>
+													</a>
+
+												</li>
+                                                <li>
+													<a href="#" data-title="Log in">
+														<span>Log in</span>
+													</a>
+												</li>
+											</ul>
+										</nav><!-- End main menu -->
+									</div>
+									<div class="col-auto header-fixed-col d-none d-lg-block">
+	
+									</div>
+									<div class="col-auto header-fixed-col col-static">
+										<!-- Begin header search -->
+										<div class="header-search">
+											<div class="header-search-ico">
+												<i class="material-icons md-22 header-search-ico-search">search</i>
+												<i class="material-icons md-22 header-search-ico-close">close</i>
+											</div>
+											<form action="#!" method="post" class="header-search-form">
+												<div class="container">
+													<div class="row">
+														<div class="col-12">
+															<div class="form-field">
+																<label for="field-search" class="form-field-label">Search...</label>
+																<input type="search" class="form-field-input" name="Search" value="" autocomplete="off" required="required" id="field-search">
+																<button type="submit" class="header-search-btn"><i class="material-icons md-22">search</i></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</form>
+										</div><!-- End header search -->
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav><!-- End header fixed -->
+			</header><!-- End header -->
+			<br><br>
+
+			
+			
+			<center><p><font size=6  face="Montserrat">Formularios por</font> <e style="color: black"><font size=6 class="services-item-title">Departamento</font></e></p></center>
+
+
+				<ItemTemplate>
+					<ImageButton ImageUrl="~/Images/edit.png" runat="server" CommandName="Edit" ToolTip="Edit" Width="20px" Height="20px"/>
+					<ImageButton ImageUrl="~/Images/delete.png" runat="server" CommandName="Delete" ToolTip="Delete" Width="20px" Height="20px"/>
+				</ItemTemplate>
+				<EditItemTemplate>
+					<ImageButton ImageUrl="~/Images/save.png" runat="server" CommandName="Update" ToolTip="Update" Width="20px" Height="20px"/>
+					<ImageButton ImageUrl="~/Images/cancel.png" runat="server" CommandName="Cancel" ToolTip="Cancel" Width="20px" Height="20px"/>
+				</EditItemTemplate>
+
+
+<!-- Begin our Diagonal Section -->
+<div class="wrapper">
+            <br><br><br><br>
+
+            <section>
+                <div class="section-content has-diagonal">
+                   	<!-- Begin our services -->
+			<section class="section services">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-lg-4 col-md-6 col-12 item">
+							<!-- Begin services item -->
+							<a href="single-services.html" class="services-item item-style">
+								<div class="services-item-ico">
+									<i class="material-icons material-icons-outlined md-48">computer</i>
+								</div>
+								<div class="services-item-ico-bg">
+									<i class="material-icons material-icons-outlined">computer</i>
+								</div>
+								<h4 class="services-item-title">Departamento TI</h4>
+
+                                   <div> Formularios Disponibles </div>
+
+								   <div> _ </div>
+                                   <p></p>
+								   <div style="color: #007000"> _ </div>
+								   <p></p>
+								   <p></p>
+									<button type="submit" class="btn ripple">Ingresar</button>	
+	
+							</a><!-- End services item -->
+						</div>
+						<div class="col-lg-4 col-md-6 col-12 item">
+							<!-- Begin services item -->
+							<a href="single-services.html" class="services-item item-style">
+								<div class="services-item-ico">
+									<i class="material-icons material-icons-outlined md-48">monetization_on</i>
+								</div>
+								<div class="services-item-ico-bg">
+									<i class="material-icons material-icons-outlined">monetization_on</i>
+								</div>
+								<h4 class="services-item-title">Financiero</h4>
+								<div> Formularios Disponibles </div>
+
+								<div> _ </div>
+								<p></p>
+								<div style="color: #007000"> _ </div>
+								<p></p>
+								<p></p>
+								 <button type="submit" class="btn ripple">Ingresar</button>
+							</a><!-- End services item -->
+						</div>
+						<div class="col-lg-4 col-md-12 col-12 item">
+							<!-- Begin services item -->
+							<a href="single-services.html" class="services-item item-style">
+								<div class="services-item-ico">
+									<i class="material-icons material-icons-outlined md-48">supervisor_account</i>
+								</div>
+								<div class="services-item-ico-bg">
+									<i class="material-icons material-icons-outlined">supervisor_account</i>
+								</div>
+								<h4 class="services-item-title">Recursos Humanos</h4>
+								<div> Formularios Disponibles </div>
+
+								<div> _ </div>
+								<p></p>
+								<div style="color: #FF0000"> _ </div>
+								<p></p>
+								<p></p>
+								 <button type="submit" class="btn ripple">Ingresar</button>
+							</a><!-- End services item -->
+						</div>
+						<div class="col-12">
+
+						</div>
+					</div>
+				</div>
+			</section><!-- End our serveces -->
+                </div>
+                <div class="section-mask bg-option-2 has-parallax"></div>
+            </section>
+            <section>
+                <div class="section-content has-padding">
+                    <h1></h1>
+                </div>
+            </section>
+        </div>
+
+		<!-- Begin footer -->
+		<footer class="footer">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row items">
+						<div class="col-xl-3 col-lg-3 col-md-5 col-12 item">
+							<!-- Begin company info -->
+
+							<!-- End company info -->
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</footer><!-- End footer -->
+
+	</main><!-- End main -->
+
+	<script src="jquery.min.js"></script>
+	<script src="script.min.js"></script>
+	<script src="custom.js"></script>
+	
+</html>
